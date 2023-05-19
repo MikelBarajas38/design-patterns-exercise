@@ -2,7 +2,6 @@ package oop.inheritance;
 
 import oop.inheritance.Application;
 import org.junit.jupiter.api.Test;
-import org.mockito.ArgumentCaptor;
 
 import static org.mockito.Mockito.*;
 
