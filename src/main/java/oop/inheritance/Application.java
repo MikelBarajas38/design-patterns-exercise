@@ -26,7 +26,6 @@ public class Application {
 
     public String readKey() {
         Keyboard keyboard = tpvDeviceFactory.getKeyboard();
-
         return keyboard.getChar();
     }
 

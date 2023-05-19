@@ -16,13 +16,13 @@ public class VerifoneGPSAdapter implements Communication {
 
     @Override
     public boolean send(Transaction message) {
-        //communication.send();
-        return true;
+        byte[] byteMessage = message.toString().getBytes();
+        return communication.send(byteMessage);
     }
 
     @Override
     public TransactionResponse receive() {
-        //communication.receive();
+        communication.receive();
         return new VerifoneTransactionResponseAdapter();
     }
 
